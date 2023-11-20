@@ -1,0 +1,193 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: yekan;
+  src: url(../fonts/IRANYekanWebFn.eot);
+  src: url(../fonts/IRANYekanWebFn.ttf);
+  src: url(../fonts/IRANYekanWebFn.woff);
+  src: url(../fonts/IRANYekanWebFn.woff2);
+}
+:root {
+  --bani-green: #19c976;
+  --bani-green-hover: #01bf6e;
+  --bani-light-gray: #f5f5f5;
+  --bani-dark-gray: #bbbec0;
+  --bani-gray-text: #6d6e71;
+  --bani-icon: #2f2f2f;
+  --bani-background: #ffffff;
+  --bani-orange: #f16421;
+  --bani-news-background: #f8f8f8;
+}
+@keyframes drowpdown {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+a,
+ul,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: yekan;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* ---------------------------------------------------------header --------> */
+.header-main-container {
+  width: 100%;
+  height: 210px;
+  border-bottom: 1px solid var(--bani-dark-gray);
+}
+.adv {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+.adv img {
+  display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 100%;
+}
+.web-margin {
+  width: 85%;
+  display: inline-block;
+}
+.header-container {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+/* --------------------------------------------------------- login --------> */
+.header-container .login {
+  width: 200px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  top: calc(110px / 2 - 45px / 2);
+  right: 0;
+}
+.header-container .login .icon-bag {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 40px / 2);
+  right: 0;
+}
+.header-container .login .icon-bag i {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 30px;
+  color: var(--bani-icon);
+  transition: 300ms;
+}
+.header-container .login .icon-bag i:hover {
+  color: var(--bani-green-hover);
+}
+.header-container .login .btn-register {
+  width: 150px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: var(--bani-green);
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 60px;
+  transition: 300ms;
+}
+.header-container .login .btn-register:hover {
+  background-color: var(--bani-green-hover);
+}
+.header-container .login .btn-register a {
+  line-height: 45px;
+  text-decoration: none;
+  color: var(--bani-background);
+  font-family: yekan;
+  font-size: 14px;
+}
+/* ----------------------------------------------------- end login --------> */
+/* -------------------------------------------------------- search --------> */
+
+.header-container .searchbar {
+  width: 600px;
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  top: calc(110px / 2 - 60px / 2);
+  right: calc(50% - 600px / 2);
+}
+.header-container .searchbar .icon-search {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bani-light-gray);
+  border-radius: 0 30px 30px 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-container .searchbar .icon-search i {
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--bani-icon);
+}
+.header-container .searchbar .input-search {
+  width: 540px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: var(--bani-light-gray);
+  border-radius: 30px 0 0 30px;
+  text-align: right;
+  direction: right;
+  padding-right: 10px;
+}
+.header-container .searchbar .input-search::placeholder {
+  text-align: right;
+  font-size: larger;
+  font-family: yekan;
+}
+.header-container .searchbar .input-search:focus {
+  outline: none;
+}
+/* ---------------------------------------------------- end search --------> */
+/* ---------------------------------------------------------- logo --------> */
+
+.header-container .logo {
+  width: 230px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  top: calc((150px - 40px) / 2 - 45px / 2);
+  left: 0;
+}
+.header-container .logo svg {
+  width: 100%;
+}
+/* ------------------------------------------------------ end logo --------> */
+/* ----------------------------------------------------- end header --------> */

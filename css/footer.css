@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: yekan;
+  src: url(../fonts/IRANYekanWebFn.eot);
+  src: url(../fonts/IRANYekanWebFn.ttf);
+  src: url(../fonts/IRANYekanWebFn.woff);
+  src: url(../fonts/IRANYekanWebFn.woff2);
+}
+:root {
+  --bani-green: #19c976;
+  --bani-green-hover: #01bf6e;
+  --bani-light-gray: #f5f5f5;
+  --bani-dark-gray: #bbbec0;
+  --bani-gray-text: #6d6e71;
+  --bani-icon: #2f2f2f;
+  --bani-background: #ffffff;
+  --bani-orange: #f16421;
+  --bani-news-background: #f8f8f8;
+}
+@keyframes drowpdown {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+a,
+ul,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: yekan;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.footer-container {
+  width: 100%;
+  height: 65vh;
+  margin-top: 60px;
+  margin-top: 60px;
+}
+.footer {
+  display: inline-block;
+  width: 85vw;
+  height: 100%;
+}
+.footer .links {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+.footer div.app,
+.footer div.footer-links {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.footer div.app {
+  position: absolute;
+  left: 0;
+}
+.footer div.footer-links {
+  position: absolute;
+  right: 0;
+}
+.footer div.apps-container {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.footer div.bani-contact-us {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.footer-links .links-container {
+  width: 32%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.app .bani-contact-us ul {
+  text-align: right;
+  font-family: yekan;
+  font-size: 16px;
+  line-height: 40px;
+}
+.app .bani-contact-us ul li:first-child {
+  margin-top: 40px;
+}
+.app .bani-contact-us ul li h5 {
+  display: inline-block;
+  margin-left: 20px;
+}
+.app .bani-contact-us ul li span:hover {
+  color: var(--bani-green-hover);
+  cursor: pointer;
+}
+.app .bani-contact-us ul a:hover {
+  all: unset;
+  cursor: auto !important;
+}
+.footer-links .links-container-1 {
+  position: absolute;
+  left: 0;
+}
+.footer-links .links-container-3 {
+  position: absolute;
+  right: 0;
+}
+.footer-links ul {
+  text-align: right;
+  font-family: yekan;
+  font-size: 16px;
+  line-height: 40px;
+}
+.footer-links ul li:first-child {
+  line-height: 60px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: var(--bani-gray-text);
+}
+.footer-links a {
+  transition: 300ms linear;
+}
+.footer-links ul li:not(:first-child) a:hover {
+  color: var(--bani-green-hover);
+  border-bottom: 2px solid var(--bani-green-hover);
+}
+.footer-links ul li:first-child a:hover {
+  cursor: auto !important;
+}
+.footer .apps-container div {
+  width: 100%;
+  height: 21%;
+  margin: 3% 0 3% 0;
+  position: relative;
+}
+.footer .apps-container .bani-logo img {
+  width: 100%;
+}
+.footer .apps-container .app-btn {
+  border-radius: 45px;
+  border: 1px solid var(--bani-green);
+  display: table;
+}
+.footer .apps-container .app-btn a {
+  display: table-cell;
+  font-family: yekan;
+  font-size: 18px;
+  color: var(--bani-green);
+  text-align: center;
+  vertical-align: middle;
+}
+.footer .apps-container .app-btn i {
+  font-size: 18px;
+  color: var(--bani-green);
+  margin-left: 10px;
+}
+.footer .apps-container .app-btn:hover {
+  border: 2px solid var(--bani-green-hover);
+}
+.footer .apps-container .app-btn a:hover,
+.footer .apps-container .app-btn i:hover {
+  color: var(--bani-green-hover);
+}
+.footer .apps-container .app-icons div {
+  all: unset;
+  display: inline-block;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.footer .apps-container .app-icons div div {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer .apps-container .app-icons div div svg {
+  width: 50%;
+  height: 50%;
+}
+.footer div.bani-info {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+.footer .apps-container .bani-mag-logo img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer div.i-logo,
+.footer div.i-text {
+  display: inline-block;
+  height: 100%;
+}
+.footer div.i-logo {
+  width: 40%;
+  position: absolute;
+  left: 0;
+}
+.footer div.i-text {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  padding-left: 30px;
+}
+.footer #more {
+  display: none;
+}
+.footer .bani-info button {
+  all: unset;
+  color: var(--bani-green);
+}
+.footer .bani-info h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: yekan;
+  color: var(--bani-gray-text);
+  text-align: right;
+}
+.footer .bani-info p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: yekan;
+  text-align: justify;
+  position: absolute;
+}
+.footer .bani-info .i-logo {
+  vertical-align: middle;
+}
+.footer .bani-info .logoes {
+  display: inline-block;
+  width: 24%;
+  height: fit-content;
+  vertical-align: middle;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: left;
+}
+.footer .bani-info .logoes img {
+  width: 100%;
+}

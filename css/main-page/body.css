@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: yekan;
+  src: url(../fonts/IRANYekanWebFn.eot);
+  src: url(../fonts/IRANYekanWebFn.ttf);
+  src: url(../fonts/IRANYekanWebFn.woff);
+  src: url(../fonts/IRANYekanWebFn.woff2);
+}
+:root {
+  --bani-green: #19c976;
+  --bani-green-hover: #01bf6e;
+  --bani-light-gray: #f5f5f5;
+  --bani-dark-gray: #bbbec0;
+  --bani-gray-text: #6d6e71;
+  --bani-icon: #2f2f2f;
+  --bani-background: #ffffff;
+  --bani-orange: #f16421;
+  --bani-news-background: #f8f8f8;
+}
+@keyframes drowpdown {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+a,
+ul,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: yekan;
+}
+body {
+  position: relative;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.sticky-chat {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 5vw;
+  background-color: var(--bani-green);
+  position: fixed;
+  bottom: 1vw;
+  left: 1vw;
+  z-index: 1000;
+  overflow: hidden;
+}
+.sticky-chat img {
+  width: 100%;
+}
+/* --------------------------------------------------------- website - container--------> */
+.website-container-1,
+.website-container-2 {
+  display: inline-block;
+  width: 85vw;
+  height: fit-content;
+  margin-top: 30px;
+}
+/* ----------------------------------------------------- end website - container--------> */
+/* ------------------------------------------------------------- banner-slider-1--------> */
+.banner-slider-1 {
+  display: block;
+  width: 100%;
+  height: fit-content;
+}
+.banner-slider-1 .slider-big {
+  display: inline-block;
+  width: 65%;
+  margin-left: 2.5%;
+  position: relative;
+  margin-bottom: auto;
+  position: relative;
+}
+.banner-slider-1 .slider-small {
+  display: inline-block;
+  width: 32%;
+  position: relative;
+  margin-bottom: auto;
+  position: relative;
+}
+/* --------------------------------------------------------- end banner-slider-1--------> */
+/* ------------------------------------------------------------- banner-slider-2--------> */
+.banner-slider-2 {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  margin-top: 30px;
+}
+.banner-slider-2 .slider-big {
+  display: inline-block;
+  width: 65%;
+  margin-right: 2.5%;
+  position: relative;
+  margin-bottom: auto;
+  position: relative;
+}
+.banner-slider-2 .slider-small {
+  display: inline-block;
+  width: 32%;
+  position: relative;
+  margin-bottom: auto;
+  position: relative;
+}
+/* --------------------------------------------------------- end banner-slider-2--------> */
+/* ------------------------------------------------------------- categories tile--------> */
+
+.categories-tile {
+  margin-top: 60px;
+  width: 100%;
+  height: 25vh;
+}
+.categories-tile div {
+  display: inline-block;
+  width: 16.3%;
+  height: 25vh;
+  vertical-align: top;
+  transition: 300ms;
+}
+.categories-tile div img {
+  width: 100%;
+}
+.categories-tile div:hover {
+  transform: scale(1.1);
+}
+/* --------------------------------------------------------- end categories tile--------> */
+/* ----------------------------------------------------------- daily-wow-product--------> */
+.daily-wow-products {
+  width: 100%;
+  height: 50vw;
+  margin-top: 30px;
+}
+.daily-wow-products .wow-header {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+.daily-wow-products .wow-header img.wow-header-pic-1,
+img.wow-header-pic-2 {
+  height: 45%;
+  position: absolute;
+  bottom: 25%;
+  right: 10px;
+}
+.daily-wow-products .wow-header img.wow-header-pic-2 {
+  left: 10px;
+}
+.daily-wow-products div.p-slider-1 {
+  width: 100%;
+  height: 70%;
+}
+.daily-wow-products div.watch-all {
+  display: inline-block;
+  border: 1px solid var(--bani-green);
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+.daily-wow-products div.watch-all a {
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.daily-wow-products div.watch-all:hover {
+  border: 2px solid var(--bani-green-hover);
+}
+.daily-wow-products div.watch-all a:hover {
+  color: var(--bani-green-hover);
+}
+.daily-wow-products div.watch-all {
+  margin-top: 20px;
+}
+/* ------------------------------------------------------- end daily-wow-product--------> */
+/* ------------------------------------------------------------ category-tiles-2--------> */
+.category-tiles-2 {
+  display: block;
+  margin-top: 60px;
+  width: 100%;
+  height: fit-content;
+}
+.category-tiles-2 div {
+  display: inline-block;
+  width: 23%;
+  margin: 0 10px 0 10px;
+}
+.category-tiles-2 img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+/* -------------------------------------------------------- end category-tiles-2--------> */
+/* ---------------------------------------------------------- most-sale-products--------> */
+.most-sale-products {
+  width: 100%;
+  height: 50vw;
+  margin-top: 30px;
+}
+.most-sale-products .ms-header {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  display: table;
+  padding-bottom: 20px;
+}
+.most-sale-products .ms-header h1 {
+  display: table-cell;
+  font-family: yekan;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: bottom;
+}
+.most-sale-products div.p-slider-1 {
+  width: 100%;
+  height: 70%;
+}
+.most-sale-products div.watch-all a {
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.most-sale-products div.watch-all {
+  display: inline-block;
+  border: 1px solid var(--bani-green);
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+.most-sale-products div.watch-all:hover {
+  border: 2px solid var(--bani-green-hover);
+}
+.most-sale-products div.watch-all a:hover {
+  color: var(--bani-green-hover);
+}
+.most-sale-products div.watch-all {
+  margin-top: 20px;
+}
+/* ------------------------------------------------------ end most-sale-products--------> */
+/* -------------------------------------------------------------------- services--------> */
+.services {
+  margin-top: 60px;
+  width: 100%;
+  height: 33.33vh;
+}
+.services div {
+  width: 24%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.services div img.background {
+  display: inline-block;
+  position: absolute;
+  width: 85%;
+  bottom: 0;
+  left: 7.5%;
+  opacity: 10%;
+}
+.services div img.background:hover {
+  opacity: 30%;
+}
+.services div h3 {
+  font-size: 20px;
+  font-family: yekan;
+  margin-bottom: 10px;
+  color: var(--bani-gray-text);
+}
+.services div span {
+  display: inline-block;
+  width: 85%;
+  font-family: yekan;
+  font-size: 14px;
+  color: var(--bani-gray-text);
+}
+/* ---------------------------------------------------------------- end services--------> */
+/* ---------------------------------------------------------- brands-logo-slider--------> */
+.brand-logos-slider {
+  margin-top: 60px;
+  width: 100%;
+  height: 45vh;
+  background-color: var(--bani-light-gray);
+}
+.brand-logos-slider div.b-header,
+.brand-logos-slider div.b-l-slider,
+.brand-logos-slider div.b-watch-all {
+  width: 100%;
+  height: 33.33%;
+}
+.brand-logos-slider div.b-header {
+  display: table;
+}
+.brand-logos-slider h1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: yekan;
+  font-size: 25px;
+}
+.brand-logos-slider div.b-watch-all {
+  display: inline-block;
+  border: 1px solid var(--bani-green);
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.brand-logos-slider div.b-watch-all a {
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.brand-logos-slider div.b-watch-all:hover {
+  border: 2px solid var(--bani-green-hover);
+}
+.brand-logos-slider div.b-watch-all a:hover {
+  color: var(--bani-green-hover);
+}
+.brand-logos-slider div.b-watch-all {
+  margin-top: 20px;
+}
+/* ------------------------------------------------------ end brands-logo-slider--------> */
+/* ------------------------------------------------------------ bani-mag-slider --------> */
+.bani-mag-slider {
+  margin-top: 60px;
+  width: 100%;
+  height: 65vh;
+}
+.bani-mag-slider div.b-mag-header,
+.bani-mag-slider div.b-mag-watch-all {
+  width: 100%;
+  height: 10%;
+}
+.bani-mag-slider div.b-mag-slider {
+  width: 100%;
+  height: 80%;
+}
+.bani-mag-slider .b-mag-header {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  display: table;
+}
+.bani-mag-slider .b-mag-header h1 {
+  display: table-cell;
+  font-family: yekan;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.bani-mag-slider div.b-mag-watch-all a {
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.bani-mag-slider div.b-mag-watch-all {
+  display: inline-block;
+  border: 1px solid var(--bani-green);
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--bani-green);
+}
+.bani-mag-slider div.b-mag-watch-all:hover {
+  border: 2px solid var(--bani-green-hover);
+}
+.bani-mag-slider div.b-mag-watch-all a:hover {
+  color: var(--bani-green-hover);
+}
+.bani-mag-slider div.b-mag-watch-all {
+  margin-top: 20px;
+}
+/* -------------------------------------------------------- end bani-mag-slider --------> */
+/* -------------------------------------------------------------- news-register --------> */
+.news-register {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  margin-top: 60px;
+}
+.news-register .register-title {
+  width: 100%;
+  height: 80%;
+  background-color: var(--bani-news-background);
+  background-image: url(../SVG/newsletter.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+}
+.news-register .register-title h1 {
+  font-size: 24px;
+  font-family: yekan;
+  margin-top: 60px;
+}
+.news-register .register-title span {
+  display: block;
+  font-size: 14px;
+  font-family: yekan;
+  margin-top: 30px;
+}
+.news-register .register-title div.letter-svg {
+  width: 35%;
+  height: fit-content;
+}
+.news-register .register-btn {
+  width: 50%;
+  height: 20%;
+  background-color: var(--bani-background);
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  border-radius: 45px;
+  padding: 10px;
+  vertical-align: middle;
+}
+.news-register .register-btn input {
+  display: inline-block;
+  width: 65%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: var(--bani-light-gray);
+  border: none;
+  outline: none;
+  margin-left: 9%;
+  padding-left: 30px;
+}
+.news-register .register-btn input::placeholder {
+  text-align: right;
+  font-size: 16px;
+  font-family: yekan;
+  padding-right: 30px;
+}
+.news-register div.r-btn {
+  display: inline-block;
+  padding: 10px;
+  width: 25%;
+  border-radius: 25px;
+  background-color: var(--bani-green);
+}
+.news-register div.r-btn a {
+  font-family: yekan;
+  font-size: 16px;
+  line-height: 10%;
+  color: var(--bani-background);
+}
+.news-register div.r-btn i {
+  margin-right: 50%;
+  color: var(--bani-background);
+}
+.news-register div.r-btn:hover {
+  cursor: pointer;
+  background-color: var(--bani-green-hover);
+}
+/* ---------------------------------------------------------- end news-register --------> */
