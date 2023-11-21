@@ -60,7 +60,7 @@ ul {
 .mySwiper-hn .swiper-slide {
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 80%;
   padding-top: 10px;
 }
 .mySwiper-hn .swiper-slide img {
